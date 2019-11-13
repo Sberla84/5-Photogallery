@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    box-shadow: 5px, 5px, grey;
+}
+.container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.container div{
+    margin: 10px;
+}
+
