@@ -9,8 +9,8 @@
       cache.push({
         element: this,
         text: this.alt.trim().toLowerCase()
-      })
-    })
+      });
+    });
   
 
 // SEARCH AND HIDE
@@ -24,7 +24,7 @@
          index = img.text.indexOf(query);
         }
           img.element.parentElement.style.display = index === -1 ? 'none' : '';
-      })
+      });
     }
     if ('oninput' in $search[0]) {
       $search.on('input', filter);
