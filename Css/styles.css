@@ -13,18 +13,19 @@
 
 .container a{
     padding: 10px;
+   
 }
 
 .input_box {
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .input_box input{
     font-size: 1em;
     padding: 20px 25px;
     border-radius: 5px;
-    width: 380px;
+    width: 320px;
     outline: 0;
     border: none;
     background-color: #e0eaeb;
@@ -41,3 +42,47 @@
 .input_box input:focus::placeholder{
     color: transparent;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width : 600px) {
+
+    body {
+       max-width: 90%; 
+       margin: 0 auto;
+    }
+
+    .container a {
+        padding: 15px;
+    }
+
+    .input_box {
+        margin: 50px auto;
+    }
+
+    .input_box input{
+        width: 400px;
+    }
+
+} 
+
+
+@media (min-width : 1024px) {
+
+    body {
+       max-width: 1024px; 
+       margin: 0 auto;
+    }
+
+    .container a {
+        padding: 25px;
+    }
+
+    .input_box {
+        margin: 50px auto;
+    }
+    .input_box input{
+        width: 600px;
+    }
+
+} 
