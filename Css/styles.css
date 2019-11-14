@@ -1,9 +1,6 @@
 * {
     box-sizing: border-box;
 }
-a {
-    text: hide;
-}
 
 .container {
 
@@ -14,8 +11,8 @@ a {
 }
 
 
-.container div{
-    margin: 10px;
+.container a{
+    padding: 10px;
 }
 
 .input_box {

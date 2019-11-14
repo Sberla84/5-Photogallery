@@ -1,8 +1,10 @@
-(function() {
+
     var $imgs = $('img');
     var $search = $('#myInput');
     var cache = [];
   
+// CREATE ARRAY WITH CHAPTION
+
     $imgs.each(function() {
       cache.push({
         element: this,
@@ -10,14 +12,18 @@
       })
     })
   
+
+// SEARCH AND HIDE
+
+
     function filter() {
       var query = this.value.trim().toLowerCase();
       cache.forEach(function(img) {
         var index = 0;
         if (query) {
-          index = img.text.indexOf(query);
+         index = img.text.indexOf(query);
         }
-        img.element.style.display = index === -1 ? 'none' : '';
+          img.element.parentElement.style.display = index === -1 ? 'none' : '';
       })
     }
     if ('oninput' in $search[0]) {
@@ -25,4 +31,8 @@
     } else {
       $search.on('keyup', filter);
     }
-  }())
+
+
+
+
+
